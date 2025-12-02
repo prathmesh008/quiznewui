@@ -37,7 +37,12 @@ function Quiz() {
     setChecked(check);
   }
 
-  if (isLoading) return <h3 className='text-light'>isLoading</h3>
+  if (isLoading) return (
+    <div className="loader-container">
+      <div className="loader"></div>
+      <h3 className='text-light'>Loading Quiz...</h3>
+    </div>
+  )
   if (serverError) return <h3 className='text-light'>{serverError || "Unknown Error"}</h3>
 
   if (result.length && result.length >= queue.length) {

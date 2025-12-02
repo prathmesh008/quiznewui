@@ -1,0 +1,55 @@
+.container ol li {
+    font-size: 1.1em;
+    color: #cecece;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.start .btn {
+    padding: .8em 2.5em;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    background: var(--gradient-main);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.start .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 255, 146, 0.3);
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+#form .userid {
+    padding: 1em 2em;
+    width: 70%;
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#form .userid:focus {
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(13, 255, 146, 0.1);
+}
